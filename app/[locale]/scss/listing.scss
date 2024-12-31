@@ -1,0 +1,167 @@
+.breadcrumbs {
+    margin: 0 0 8px 0; padding: 0;
+
+    li{
+        font-size: 15px;
+        padding: 0 13px 0 18px;
+
+        &:first-child{
+            padding-left: 0;
+        }
+
+        a{
+            color: #b80d0d;
+
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+
+    .arrw-icon{
+        svg{
+            height: 14px;
+        }
+    }
+}
+
+h3{
+    font-family: Roboto,sans-serif;
+}
+
+.listing-page{
+    display: block;
+    width: 100%;
+    margin: 55px 0 70px;
+
+    @media (max-width: 1365px) {
+        margin: 50px 0 60px;
+    }
+
+    @media (max-width: 1199px) {
+        margin: 40px 0 50px;
+    }
+
+    @media (max-width: 1023px) {
+        margin: 35px 0 40px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 30px 0 35px;
+    }
+
+    @media (max-width: 567px) {
+        margin: 30px 0 25px;
+    }
+
+    @media (max-width: 413px) {
+        margin: 25px 0 20px;
+    }
+
+    .main-content{
+        .productGrid{
+            .product{
+                transition: all .3s ease-in-out 0s;
+                
+                .product-image{
+                    
+                    .card-figcaption-button {
+                        display: block;
+                        background: rgba(184, 13, 13, 0.9);
+                        color: #fff;
+                        font-size: 16px;
+                        line-height: 1rem;
+                        width: 100%;
+                        max-width: max-content;
+                        margin: auto;
+                        padding: 0.57143rem 1.5rem;
+                        text-align: center;
+                        border-radius: 4px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: max-content;
+                        z-index: 1;
+                        transition: all .3s ease-in-out 0s;
+                        opacity: 0;
+                        visibility: hidden;
+    
+                        &:hover{
+                           background: #b80d0d;
+                        }
+    
+                        > span{
+                            top: 0; left: 0; background: #b80d0d; border-radius: 4px;
+                        }
+                    }
+                }
+                .card-title {
+                    width: 100%;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    line-height: 25px;
+                    margin: 0 0 7px 0;
+                    text-align: center;
+                }
+                .price_wrapper{
+                    flex-wrap: wrap; justify-content: center;
+                    
+                    .price {
+                        width: auto;
+                        display: inline-block;
+                        font-size: 20px;
+                        color: #000;
+                        margin: 0 5px;
+                    }
+                }
+
+                &:hover{
+                    .card-figcaption-button{
+                        opacity: 1; visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+.data-\[state\=open\]\:slide-in-from-right[data-state=open]{
+    background: #fff; color: #000;
+
+    form{
+        margin-top: 20px;
+    }
+
+    .pr-qty-buttonwrap{
+        flex-wrap: wrap;
+
+        .pr-btn-wrapper{
+            margin-top: 20px;
+
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+.pro-card-wrap{
+    .card-item{
+        .card-img-wrap{
+            position: relative;
+            .card-button{
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; text-align: center;
+            }
+        }
+        .card-title{
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 25px;
+            margin: 0 0 7px 0;
+        }
+        .card-button{
+            background-color: #b80d0d; border-color: #b80d0d; display: inline-block;
+        }
+    }
+}  

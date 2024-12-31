@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+
+    body{
+        @apply font-normal font-roboto;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-bold font-oswald;
+    }
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 160px;
+    }
+    
+   
+}
+
+@layer components{
+    .button{
+        @apply bg-[#000] text-[18px] uppercase min-h-[49px] py-[10px] px-[20px] min-w-[234px] text-white font-oswald font-normal cursor-pointer transition-all duration-500 hover:bg-black;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.27);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #000;
+        position: relative;
+        @media (max-width:1365px){
+            font-size: 16px;
+            min-width: 200px;
+            min-height: auto;
+        }
+    }
+    .button:hover{
+        background: #b80d0d; color: #fff !important; border-color: #b80d0d;
+    }
+    .primary-btn{
+        @apply bg-[#b80d0d] text-[18px] uppercase min-h-[49px] py-[10px] px-[20px] min-w-[234px] text-white font-oswald font-normal cursor-pointer transition-all duration-500 hover:bg-black;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.27);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #b80d0d;
+        position: relative;
+        @media (max-width:1365px){
+            font-size: 16px;
+            min-width: 200px;
+            min-height: auto;
+        }
+    }
+    .primary-btn:hover{
+        border-color:#000;
+    }
+    .secondary-btn{
+        @apply bg-[#fff] text-[18px] uppercase min-h-[49px] py-[10px] px-[20px] min-w-[234px] text-black font-oswald font-normal cursor-pointer transition-all duration-500 hover:bg-black hover:text-white;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.27);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #000;
+        position: relative;
+        @media (max-width:1365px){
+            font-size: 16px;
+            min-width: 200px;
+            min-height: auto;
+        }
+    }
+
+    .secondary-btn:hover{
+        color:#fff !important;
+    }
+
+    .small-btn{
+        @apply bg-[#000] text-[16px] uppercase min-h-[49px] py-[10px] px-[20px] min-w-[234px] text-white font-oswald font-normal cursor-pointer transition-all duration-500 hover:text-white;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.27);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border:2px solid #000;
+        letter-spacing: 2px;
+        position: relative;
+        @media (max-width:1365px){
+            font-size: 16px;
+            min-width: 200px;
+            min-height: auto;
+        }
+    }
+
+    .small-btn:hover{
+        background: #b80d0d; border-color: #b80d0d; color: #fff !important;
+    }
+    .small-w-btn{
+        @apply min-h-[unset] min-w-[unset] px-[20px] py-[8px] leading-[1.2]
+    }
+}
+
+#stick-pr-info{
+    top: -100%;
+}
+#stick-pr-info.sticky-visible{
+    top:0;
+}
